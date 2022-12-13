@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import { Avatar, Navbar } from '@nextui-org/react'
+import { Avatar, Navbar, StyledLink } from '@nextui-org/react'
 import { menuItems } from '../data'
 import { SmallButton, ActiveLink } from '.'
 
@@ -52,16 +52,16 @@ const StyledLinks = styled.div`
 `
 
 export const Nav = () => {
+
     const Logo = (
-        <Navbar.Brand className='logo'>
-            <Link href="/" aria-label="home">
-                <Avatar
-                    size='lg'
-                    src="/assets/ilustracion-rocio.png"
-                    zoomed
-                />
-            </Link>
-        </Navbar.Brand>
+        <Link href="/" aria-label="home">
+            <Avatar
+                size='lg'
+                src="/assets/ilustracion-rocio.png"
+                zoomed
+                css={{ bg: 'transparent'}}
+            />
+        </Link>
     );
 
     return (
@@ -73,7 +73,7 @@ export const Nav = () => {
                         {
                             menuItems.map( ({ text, href }) => (
                                 <li key= { href }>
-                                    <ActiveLink  text={ text } href= { href } />
+                                    <ActiveLink  text = { text } href = { href } />
                                 </li>
                             ))
                         }

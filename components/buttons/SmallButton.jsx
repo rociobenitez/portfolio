@@ -11,7 +11,7 @@ export const SmallButton = ({ href, text, target }) => {
 
 SmallButton.propTypes = {
   href:   PropTypes.string.isRequired,
-  texto:  PropTypes.string.isRequired,
+  text:  PropTypes.string.isRequired,
   target: PropTypes.string,
 }
 

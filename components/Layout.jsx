@@ -5,6 +5,7 @@ import { Nav, Footer } from '.';
 import { GlobalStyle, theme } from '../styles';
 
 export const Layout = ({ children, title, siteTitle, image, description, keywords, main }) => {
+
   return (
     <>
       <Head>
@@ -29,13 +30,13 @@ export const Layout = ({ children, title, siteTitle, image, description, keyword
       <div id="root">
         <ThemeProvider theme = { theme }>
           <GlobalStyle />
-            <div>
-              <Nav />
-              <main className = { main || null }>
-                  { children }
-              </main>
-              <Footer />
-            </div>
+          {/* <div> */}
+            <Nav />
+            <main className = { main }>
+                { children }
+            </main>
+            <Footer />
+          {/* </div> */}
         </ThemeProvider>
       </div>
     </> 
@@ -58,4 +59,5 @@ Layout.defaultProps = {
   description: 'Este es el portfolio de Rocío Benítez',
   keywords: 'portfolio, react, nextjs, frontend, developer, frontend developer, javascript, projects',
   image: null,
+  main: '',
 };

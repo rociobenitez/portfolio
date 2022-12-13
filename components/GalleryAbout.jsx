@@ -2,7 +2,6 @@ import { Card, Grid, Image, Spacer } from '@nextui-org/react'
 import { images } from '../data'
 
 export const GalleryAbout = () => {
-    console.log(images)
     return (
         <Grid.Container gap = {1} justify = "center">
             {

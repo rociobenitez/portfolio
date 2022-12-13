@@ -1,4 +1,3 @@
-// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components'
 import { Grid } from '@nextui-org/react';
 import { Layout, Button } from '../components'
@@ -43,7 +42,8 @@ const StyledHeroSection = styled.section`
 const HomePage = () => {
   return (
     <Layout
-      title="Home">
+      title = "Home"
+    >
       <>
         <StyledHeroSection>
           <div className='divHome'>

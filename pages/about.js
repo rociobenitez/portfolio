@@ -97,7 +97,6 @@ const AboutPage = () => {
       content  = "Esta es la página 'Sobre mi' del portfolio de Rocío Benítez"
       keywords = "about, sobre mi"
     >
-      <>
         <Grid.Container gap={2} direction = 'column' justify="center" css={{maxWidth: '1000px', m:'auto'}}>
           <StyledAboutSection>
             <Grid.Container gap={2}>
@@ -183,9 +182,9 @@ const AboutPage = () => {
             </ StyledContact>
           </ StyledAboutSection>
         </Grid.Container>
-      </>
     </Layout>  
   )
 }
+
 
 export default AboutPage;
