@@ -33,47 +33,49 @@ const ProjectPage = ({ project }) => {
             title = { project.title }
             main = "fillHeight"
         >
-            <Grid.Container gap={1} justify="center" css={{ marginTop:'7em' }}>
-                <Grid xs={12} sm={3}>
-                    <Aside 
-                        skills = { project.skills } 
-                        rol = { project.rol }
-                    />
-                </Grid>
-                <Grid xs={12} sm={9} direction='column'>
-                    <HeroProject
-                        title    = { project.title }
-                        intro    = { project.intro }
-                        buttons  = { project.buttons }
-                        src      = { project.src }
-                        alt      = { project.alt }
-                    />
-                    <StyledContainer>
-                        
-                        { (() => {
-                            switch( project.nameComponent ) {
-                                case 'ClinicaBenitez':
-                                    return <ClinicaBenitez /> 
-                                case 'CrmMedical':
-                                    return <CrmMedical />
-                                case 'Copoe':
-                                    return <Copoe />
-                                case 'Runapp':
-                                    return <Runapp />
-                                case 'ViajeAmarte':
-                                    return <ViajeAmarte />
-                                case 'Sitiapp':
-                                    return <Sitiapp />
-                                default:
-                                    return null
-                            }
-                        })() }
+            <>
+                <Grid.Container gap={1} justify="center" css={{ marginTop:'7em' }}>
+                    <Grid xs={12} sm={3}>
+                        <Aside 
+                            skills = { project.skills } 
+                            rol = { project.rol }
+                        />
+                    </Grid>
+                    <Grid xs={12} sm={9} direction='column'>
+                        <HeroProject
+                            title    = { project.title }
+                            intro    = { project.intro }
+                            buttons  = { project.buttons }
+                            src      = { project.src }
+                            alt      = { project.alt }
+                        />
+                        <StyledContainer>
+                            
+                            { (() => {
+                                switch( project.nameComponent ) {
+                                    case 'ClinicaBenitez':
+                                        return <ClinicaBenitez /> 
+                                    case 'CrmMedical':
+                                        return <CrmMedical />
+                                    case 'Copoe':
+                                        return <Copoe />
+                                    case 'Runapp':
+                                        return <Runapp />
+                                    case 'ViajeAmarte':
+                                        return <ViajeAmarte />
+                                    case 'Sitiapp':
+                                        return <Sitiapp />
+                                    default:
+                                        return null
+                                }
+                            })() }
 
-                        <Gallery images = { project.img }/>   
+                            <Gallery images = { project.img }/>   
 
-                    </StyledContainer>
-                </Grid>
-            </Grid.Container>
+                        </StyledContainer>
+                    </Grid>
+                </Grid.Container>
+            </>
         </Layout>                  
     )
 }

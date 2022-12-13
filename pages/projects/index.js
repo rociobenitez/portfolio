@@ -7,16 +7,18 @@ const ProjectsPage = ({ projects }) => {
       <Layout
         title = "Portfolio"
         main = "gridPortfolio">
-        <Grid.Container gap={1} justify="center">
-          {projects.map(( project, index ) => (  
-            <Grid xs={12} sm={4} key = { (index + 1) }>
-              <CardProject
-                project = { project }
-                id = { (index + 1) }
-              />
-            </Grid>
-          ))}
-        </Grid.Container>
+        <>
+          <Grid.Container gap={1} justify="center">
+            {projects.map(( project, index ) => (  
+              <Grid xs={12} sm={4} key = { (index + 1) }>
+                <CardProject
+                  project = { project }
+                  id = { (index + 1) }
+                />
+              </Grid>
+            ))}
+          </Grid.Container>
+        </>
       </Layout>
   )
 }

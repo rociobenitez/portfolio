@@ -14,6 +14,6 @@ export const ActiveLink = ({ text, href }) => {
 }
 
 ActiveLink.propTypes = {
-    text : PropTypes.string.isRequiered,
-    href : PropTypes.string.isRequiered,
+    text : PropTypes.string.isRequired,
+    href : PropTypes.string.isRequired,
 }

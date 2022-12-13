@@ -44,27 +44,29 @@ const HomePage = () => {
   return (
     <Layout
       title="Home">
-      <StyledHeroSection>
-        <div className='divHome'>
-          <h6>Hola, soy</h6>
-          <h1>Rocío Benítez</h1>
-          <h2>Frontend Developer</h2>
-          <Grid.Container gap={2} justify="center">
-            {
-              infoBtn.map( ({ text, url }) => (
-                <Grid key = { url }>
-                  <Button
-                    key = { url }
-                    texto = { text }
-                    as = 'a'
-                    href = { url }
-                  />
-                </Grid>
-              ))
-            }
-          </Grid.Container>
-        </div>
-      </StyledHeroSection>
+      <>
+        <StyledHeroSection>
+          <div className='divHome'>
+            <h6>Hola, soy</h6>
+            <h1>Rocío Benítez</h1>
+            <h2>Frontend Developer</h2>
+            <Grid.Container gap={2} justify="center">
+              {
+                infoBtn.map( ({ text, url }) => (
+                  <Grid key = { url }>
+                    <Button
+                      key = { url }
+                      texto = { text }
+                      as = 'a'
+                      href = { url }
+                    />
+                  </Grid>
+                ))
+              }
+            </Grid.Container>
+          </div>
+        </StyledHeroSection>
+      </>
     </Layout> 
   )
 }
