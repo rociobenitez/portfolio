@@ -242,7 +242,7 @@ export const Runapp = () => {
             <h5>Contraste</h5>
             <p>Ahora soy más consciente de las herramientas que existen para guiar a los diseñadores a aumentar la accesibilidad para el contraste de color (basado en los estándares W3C). Todo el contraste entre el texto y el fondo debe ser de al menos 4,5:1 o un estándar AA.</p>
             <p>Con el tiempo he ido adquiriendo mayores conocimientos en <em>accesibilidad</em> que antes no conocía.</p>
-            <p>Hoy en día, <em className='white'><a href='https://colorable.jxnblk.com/' target='_blank'>Colorable</a></em> es una de mis herramientas favoritas para comprobar el contraste.</p>
+            <p>Hoy en día, <em className='white'><a href='https://colorable.jxnblk.com/' target='_blank' rel='noopener noreferrer'>Colorable</a></em> es una de mis herramientas favoritas para comprobar el contraste.</p>
 
             <h5>Testing</h5>
             <p>Hubiera necesitado un <em>testing</em> mayor para sacar datos más concluyentes en la última fase del Design Thinking. También quedó pendiente analizar la <em className='white'>intencionalidad de pago</em> de la app.</p>

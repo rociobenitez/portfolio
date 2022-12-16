@@ -154,7 +154,7 @@ const AboutPage = () => {
                 <StyledText>
                   <h4 className="small-heading">Quién soy</h4>
                   <h6 className="subtitle">Cuando no estoy delante del ordenador</h6>
-                  <p>Soy muy activa e inquieta, no podría vivir sin <em className="white">deporte</em>. Me encanta conocer lugares nuevos y probar todo tipo de <em className="white">comida</em> <em>(sobre todo si es con queso).</em></p><p>Me relaja mucho <em className="white">dibujar</em> y la <em className="white">música</em>, me quedo con aquellas canciones que me erizan la piel <em>(<span className="enfasis"><a href={ spotify }target='_blank'>esta</a></span> es una de mis playlist favoritas).</em></p>
+                  <p>Soy muy activa e inquieta, no podría vivir sin <em className="white">deporte</em>. Me encanta conocer lugares nuevos y probar todo tipo de <em className="white">comida</em> <em>(sobre todo si es con queso).</em></p><p>Me relaja mucho <em className="white">dibujar</em> y la <em className="white">música</em>, me quedo con aquellas canciones que me erizan la piel <em>(<span className="enfasis"><a href={ spotify }target='_blank' rel='noopener noreferrer'>esta</a></span> es una de mis playlist favoritas).</em></p>
                   <p>Desde 2016 me acompaña <em>&apos;Noa&apos;</em> 🐕‍🦺 , gracias a ella acabo dando más paseos por el campo. </p>
                 </ StyledText>
               </Grid>
