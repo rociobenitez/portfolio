@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { projects } from '../../data'
 
 const StyledUl = styled.ul`
-    padding: 0; 
+    padding: 0;
     list-style: none;
     li {
         position: relative;
@@ -71,7 +71,7 @@ export const Copoe = () => {
                 <li><span className="enfasis">Wireframes.</span> Se diseñan los primeros bocetos de la web pensando en el diseño <em>responsive.</em></li>
             </StyledUl>
             <Spacer y={1}/>
-            <blockquote><em>Puedes ver la estructura del proyecto en <span className="enfasis"><Link href={ project.buttons[1][1] } target="_blank">GitHub</Link></span></em></blockquote>
+            <blockquote><em>Puedes ver la estructura del proyecto en <span className="enfasis"><a href={ project.buttons[1][1] } target="_blank">GitHub</a></span></em></blockquote>
             <Spacer y={2}/>
 
             <h4>Base de datos</h4>
@@ -88,7 +88,7 @@ export const Copoe = () => {
             <Spacer y={2}/>
 
             <h4>Bootstrap</h4>
-            <p>Para facilitar un diseño y comportamiento receptivo adecuado hice uso de <span className="enfasis"><Link href="https://getbootstrap.com/" target="_blank">Bootstrap</Link></span>, al ser un framework que ofrece un amplio abanico de herramientas y funciones para el frontend.</p>
+            <p>Para facilitar un diseño y comportamiento receptivo adecuado hice uso de <span className="enfasis"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></span>, al ser un framework que ofrece un amplio abanico de herramientas y funciones para el frontend.</p>
 
             <h3>¿Qué se ha trabajado?</h3>
             <h4>Backend</h4>
@@ -119,7 +119,6 @@ export const Copoe = () => {
             </StyledUl>
             <Spacer y={2}/>
             <blockquote><em>Puedes ver más detalles del proyecto en mi archivo de <span className="enfasis"><Link href={ project.buttons[0][1] } target="_blank">Figma</Link></span></em></blockquote>
-        </>   
+        </>
     )
 }
-

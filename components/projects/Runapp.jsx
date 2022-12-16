@@ -5,7 +5,7 @@ import { projects } from '../../data'
 import { CardItems } from '../'
 
 const StyledUl = styled.ul`
-    padding: 0; 
+    padding: 0;
     list-style: none;
     li {
         position: relative;
@@ -67,7 +67,7 @@ export const Runapp = () => {
             <p>Además, idee la nueva <span className="enfasis">expresión visual</span> de la applicación <em>(logotipo, isotipo, paleta de colores, tipografía...).</em></p>
             <Spacer y={1}/>
             <blockquote>En el apartado <em className="white">&apos;📝 Details project&apos;</em> del archivo de <span className='white'><Link href={ project.buttons[0][1] } target="_blank">Figma</Link></span> puedes ver al detalle el proceso de este proyecto.</blockquote>
-            
+
             <h3>Etapa 1 - Observar</h3>
             <p>Esta etapa comienza con una <em className="white">búsqueda en medios y netnografía</em> para conocer y entender el <em>sector del running y del calzado deportivo</em>. De esta forma, tuve un perfil más claro del mercado y de nuestros posibles usuarios.</p>
             <Spacer y={1}/>
@@ -109,7 +109,7 @@ export const Runapp = () => {
                 <Grid sm={6} key={ name }>
                     <CardItems name = { name } description = { description } />
                 </Grid>
-                )) 
+                ))
             }
             </Grid.Container>
             <Spacer y={2}/>
@@ -242,12 +242,11 @@ export const Runapp = () => {
             <h5>Contraste</h5>
             <p>Ahora soy más consciente de las herramientas que existen para guiar a los diseñadores a aumentar la accesibilidad para el contraste de color (basado en los estándares W3C). Todo el contraste entre el texto y el fondo debe ser de al menos 4,5:1 o un estándar AA.</p>
             <p>Con el tiempo he ido adquiriendo mayores conocimientos en <em>accesibilidad</em> que antes no conocía.</p>
-            <p>Hoy en día, <em className='white'><Link href='https://colorable.jxnblk.com/' target='_blank'>Colorable</Link></em> es una de mis herramientas favoritas para comprobar el contraste.</p>
+            <p>Hoy en día, <em className='white'><a href='https://colorable.jxnblk.com/' target='_blank'>Colorable</a></em> es una de mis herramientas favoritas para comprobar el contraste.</p>
 
             <h5>Testing</h5>
             <p>Hubiera necesitado un <em>testing</em> mayor para sacar datos más concluyentes en la última fase del Design Thinking. También quedó pendiente analizar la <em className='white'>intencionalidad de pago</em> de la app.</p>
             <Spacer y={2}/>
-        </>   
+        </>
   )
 }
-
