@@ -21,7 +21,7 @@ const StyledText = styled.div`
   }
   p.list {
     padding-top: 1em;
-  }  
+  }
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -101,14 +101,14 @@ const AboutPage = () => {
           <StyledAboutSection>
             <Grid.Container gap={2}>
               <Grid md={8} sm={12} >
-                <StyledText> 
+                <StyledText>
                   <h3 className="medium-heading">About Me</h3>
                   <h6 className="subtitle">Esta es mi historia</h6>
                   <p>Vengo del <span className="white">sector sanitario,</span> pero siempre me ha atraído el diseño y el mundo digital. Cuando monté mi propia clínica, quise poder crear su web corporativa. Desde ese momento no pude parar. Todos los conocimientos nuevos que adquiría sobre desarrollo web hacían aumentar mi motivación y curiosidad por seguir dando pasos en ese camino.</p>
                   <p>Pierdo la noción del tiempo cuando <em className="enfasis"> diseño, investigo, analizo y programo una idea.</em> Podría decir que tengo un <em className="white">lado creativo y un lado lógico</em> que trabajan en sintonía.</p>
                   <p className="list">Estas son algunas de las <span className="white">tecnologías y lenguajes</span> que conozco:</p>
                   <ul className="skills-list list">
-                    { skills && skills.map((skill, i) => <li key={i}>{skill}</li>) } 
+                    { skills && skills.map((skill, i) => <li key={i}>{skill}</li>) }
                   </ul>
                 </ StyledText>
               </Grid>
@@ -145,7 +145,7 @@ const AboutPage = () => {
             </Grid.Container>
 
             <Spacer y = {4} />
-            
+
             <Grid.Container gap={4} alignItems='center' justify='center' css={{}}>
               <Grid xs={0} sm={4}>
                 <GalleryAbout/>
@@ -154,9 +154,9 @@ const AboutPage = () => {
                 <StyledText>
                   <h4 className="small-heading">Quién soy</h4>
                   <h6 className="subtitle">Cuando no estoy delante del ordenador</h6>
-                  <p>Soy muy activa e inquieta, no podría vivir sin <em className="white">deporte</em>. Me encanta conocer lugares nuevos y probar todo tipo de <em className="white">comida</em> <em>(sobre todo si es con queso).</em></p><p>Me relaja mucho <em className="white">dibujar</em> y la <em className="white">música</em>, me quedo con aquellas canciones que me erizan la piel <em>(<span className="enfasis"><Link href={ spotify }target='_blank'>esta</Link></span> es una de mis playlist favoritas).</em></p>
+                  <p>Soy muy activa e inquieta, no podría vivir sin <em className="white">deporte</em>. Me encanta conocer lugares nuevos y probar todo tipo de <em className="white">comida</em> <em>(sobre todo si es con queso).</em></p><p>Me relaja mucho <em className="white">dibujar</em> y la <em className="white">música</em>, me quedo con aquellas canciones que me erizan la piel <em>(<span className="enfasis"><a href={ spotify }target='_blank' rel='noopener noreferrer'>esta</a></span> es una de mis playlist favoritas).</em></p>
                   <p>Desde 2016 me acompaña <em>&apos;Noa&apos;</em> 🐕‍🦺 , gracias a ella acabo dando más paseos por el campo. </p>
-                </ StyledText> 
+                </ StyledText>
               </Grid>
               <Grid xs={12} sm={0} css={{marginTop:'2em'}}>
                 <GalleryAbout/>
@@ -178,11 +178,11 @@ const AboutPage = () => {
                     texto="Escríbeme"
                   />
                 </>
-              </ StyledText> 
+              </ StyledText>
             </ StyledContact>
           </ StyledAboutSection>
         </Grid.Container>
-    </Layout>  
+    </Layout>
   )
 }
 

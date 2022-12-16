@@ -25,7 +25,7 @@ export const CrmMedical = () => {
             <p>Mi papel en este proyecto era <b>desarrollar una guía de estilo digital integral y diseñar la experiencia visual del software médico.</b> Como sanitaria y propietaria de una clínica privada, <em className="enfasis">conozco bien las necesidades</em> del día a día en consulta. Además, el haber trabajado con diferentes CRMs médicos de calidad me permitió valorar e implementar en &apos;CRM medical&apos; nuevas características que hicieran mejorar el producto.</p>
 
             <h3>Investigación</h3>
-            <p>En el apartado <em className="white">&apos;💭 Briefing - Research&apos;</em> del archivo de <Link href={ project.buttons[0][1] } target="_blank">Figma</Link> se puedes ver el resultado final del proceso de investigación previa del proyecto <em>(moodboard, buyer persona, DAFO, propuesta de valor, Desk-Research, análisis de la competencia, modelo Canvas, mensajes prioritarios, planificación, presupuesto...)</em></p>
+            <p>En el apartado <em className="white">&apos;💭 Briefing - Research&apos;</em> del archivo de <a href={ project.buttons[0][1] } target="_blank" rel='noopener noreferrer'>Figma</a> se puedes ver el resultado final del proceso de investigación previa del proyecto <em>(moodboard, buyer persona, DAFO, propuesta de valor, Desk-Research, análisis de la competencia, modelo Canvas, mensajes prioritarios, planificación, presupuesto...)</em></p>
             <p>Se analizaron <b>más de 30 sistemas de gestión</b> (no solo médicos) tanto del panorama nacional como internacional, para poder sacar una síntesis inicial antes de iniciar el proceso creativo.</p>
 
             <h3>Fase creativa</h3>
@@ -43,7 +43,7 @@ export const CrmMedical = () => {
                     css        = {{ bg: 'transparent' }}
                 />
             </Grid>
-            
+
             <h3>Desarrollo</h3>
             <p>En cuanto a la <b>Experiencia visual,</b> comencé diseñando una guía de estilo digital integral y una biblioteca de componentes reutilizables, que asegurara la consistencia y los tiempos de construcción más rápidos.</p>
             <p>Antes de hacer el cambio de prototipos de baja a alta fidelidad, fueron estos valorados y comentados con otros compañeros del sector para asegurarme de que lo que se iba construyendo era útil y significativo.</p>

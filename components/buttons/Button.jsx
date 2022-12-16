@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 export const Button = ({ href, texto, target }) => {
   return (
-    <>
-      <Link href={ href } target= { target } className="bigButton"> { texto }</Link>
-    </>  
+    <a href={ href } target= { target }  rel='noopener noreferrer' className="bigButton">{ texto }</a>
   )
 }
 

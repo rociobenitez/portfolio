@@ -5,7 +5,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { linkedin, github } from '../data';
 
 const StyledFooter = styled.footer`
-  witdh: 100%;  
+  witdh: 100%;
   height: 10vh;
   text-align: center;
   display: flex;
@@ -36,12 +36,12 @@ export const Footer = () => {
       <StyledCredit>
           <div>Designed &amp; Built by Rocío</div>
           <DivIcons>
-            <Link href = { linkedin } >
+            <a href = { linkedin }>
               <AiFillLinkedin size="2em"/>
-            </Link>
-            <Link href = { github } >
+            </a>
+            <a href = { github }>
               <AiFillGithub size="2em"/>
-            </Link>
+            </a>
           </DivIcons>
       </StyledCredit>
     </StyledFooter>
