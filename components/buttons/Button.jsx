@@ -1,11 +1,8 @@
-import Link from 'next/link'
 import PropTypes from 'prop-types';
 
 export const Button = ({ href, text, target }) => {
   return (
-    <>
-      <Link href={ href } target= { target } className="bigButton">{ text }</Link>
-    </>  
+ <a href={ href } target= { target } rel='noreferrer noopener' className="bigButton">{ text }</a>
   )
 }
 

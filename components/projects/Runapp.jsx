@@ -91,7 +91,7 @@ export const Runapp = () => {
                 <Grid sm={6} key={ name }>
                     <CardItems name = { name } description = { description } />
                 </Grid>
-                )) 
+                ))
             }
             </Grid.Container>
             <Spacer y={2}/>
@@ -229,7 +229,6 @@ export const Runapp = () => {
             <h5>Testing</h5>
             <p>Hubiera necesitado un <em>testing</em> mayor para sacar datos más concluyentes en la última fase del Design Thinking. También quedó pendiente analizar la <em className='white'>intencionalidad de pago</em> de la app.</p>
             <Spacer y={2}/>
-        </>   
+        </>
   )
 }
-
