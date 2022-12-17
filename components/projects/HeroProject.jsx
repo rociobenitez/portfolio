@@ -1,22 +1,11 @@
 import { Grid, Image, Spacer } from "@nextui-org/react";
 import PropTypes from 'prop-types';
-import styled from 'styled-components'
 import { SmallButton } from '../../components';
-
-const StyledHeroSection = styled.section`  
-    padding: 1em 0;
-    h1 {
-        font-size: 2.5em;
-        font-weight: bold;
-    }
-    p {
-        color: var(--light-slate);
-    }
-`
+import styles from './HeroProject.module.css'
 
 export const HeroProject = ({ title, intro, buttons, src, alt }) => {
   return (
-    <StyledHeroSection>
+    <div className={styles.heroProject}>
         <h1>{ title }</h1>
         <p>{ intro }</p>
         <Spacer y={1}/>
@@ -39,11 +28,9 @@ export const HeroProject = ({ title, intro, buttons, src, alt }) => {
             src        = { src }
             alt        = { alt }
             objectFit  = 'contain'
-            css = {{
-                bg: 'var(--white)'
-            }}
+            css        = {{ bg: 'var(--white)'}}
         />
-    </StyledHeroSection>
+    </div>
   )
 }
 

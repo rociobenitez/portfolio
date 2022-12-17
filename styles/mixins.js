@@ -75,12 +75,12 @@ const mixins = {
       content: '';
       display: block;
       width: 0;
-      height: 1px;
+      height: 2px;
       position: relative;
-      bottom: 0.37em;
+      bottom: 0em;
       background-color: var(--green);
       transition: var(--transition);
-      opacity: 0.5;
+      opacity: .7;
     }
   `,
 

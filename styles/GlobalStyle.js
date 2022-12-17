@@ -62,11 +62,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--navy);
     color: var(--slate);
     font-family: var(--font-sans);
-    font-size: var(--fz-xl);
+    font-size: var(--fz-lg);
     line-height: 1.3;
 
     @media (max-width: 480px) {
-      font-size: var(--fz-lg);
+      font-size: var(--fz-md);
     }
 
     &.hidden {
@@ -95,14 +95,20 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
 
-    &.fillHeight {
+    .fillHeight {
       padding: 0 2em;
       max-width: 1200px;
+      margin: auto;
+
+      @media(max-width: 480px) {
+        padding: 0 1em;
+      }
     }
 
-    &.gridPortfolio {
+    .gridPortfolio {
       max-width: 1300px;
       padding: 6em 2em 3em;
+      margin: auto;
     }
   }
 
@@ -175,6 +181,7 @@ const GlobalStyle = createGlobalStyle`
     }
     &.inline-link {
       ${({ theme }) => theme.mixins.inlineLink};
+      
     }
 
     &.bigButton {
@@ -260,6 +267,9 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       list-style: none;
       font-size: var(--fz-md);
+      &.list-lg{
+        font-size: var(--fz-lg);
+      }
       li {
         position: relative;
         padding-left: 30px;

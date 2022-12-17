@@ -4,12 +4,14 @@ import { ThemeProvider } from "styled-components";
 import { Nav, Footer } from '.';
 import { GlobalStyle, theme } from '../styles';
 
-export const Layout = ({ children, title, siteTitle, image, description, keywords, main }) => {
+export const Layout = ({ children, title, image, description, keywords }) => {
+
+  const origin = (typeof window === 'undefined') ? '' : window.location.origin;
 
   return (
     <>
       <Head>
-        <title>{`${title}` || `${siteTitle}`}</title>
+        <title>{ title }</title>
         <meta name = "description"              content = { description } />
         <meta name = "image"                    content = { image } />
         <meta name = "keywords"                 content = { keywords } />
@@ -17,8 +19,8 @@ export const Layout = ({ children, title, siteTitle, image, description, keyword
         <meta property = "og:type"              content = "website" />
         <meta property = "og:title"             content = { title } />
         <meta property = "og:description"       content = { description } />
-        <meta property = "og:site_name"         content = { siteTitle } />
-        <meta property = "og:image"             content = { image } />
+        <meta property = "og:site_name"         content = { title } />
+        <meta property = "og:image"             content = { `${ origin }/assets/cover-portfolio-rociobenitez.png` } />
 
         <meta property = "twitter:card"         content = "summary" />
         <meta property = "twitter:title"        content = { title } />
@@ -26,38 +28,29 @@ export const Layout = ({ children, title, siteTitle, image, description, keyword
 
         <link rel="icon" href="/assets/ilustracion-rocio.png" />
       </Head>
-      
-      <div id="root">
-        <ThemeProvider theme = { theme }>
-          <GlobalStyle />
-          {/* <div> */}
-            <Nav />
-            <main className = { main }>
-                { children }
-            </main>
-            <Footer />
-          {/* </div> */}
-        </ThemeProvider>
-      </div>
+      <ThemeProvider theme = { theme }>
+        <GlobalStyle />
+          <Nav />
+          <main>
+              { children }
+          </main>
+          <Footer />
+      </ThemeProvider>
     </> 
   )
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   title: PropTypes.string,
-  siteTitle: PropTypes.string,
   description: PropTypes.string,
   keywords: PropTypes.string,
   image: PropTypes.string,
-  main: PropTypes.string,
 };
 
 Layout.defaultProps = {
   title: 'Rocío Benítez',
-  siteTitle: 'Rocío Benítez',
   description: 'Este es el portfolio de Rocío Benítez',
   keywords: 'portfolio, react, nextjs, frontend, developer, frontend developer, javascript, projects',
   image: null,
-  main: '',
 };

@@ -1,4 +1,4 @@
-import { Card, Grid, Image, Spacer } from '@nextui-org/react'
+import { Card, Grid, Spacer } from '@nextui-org/react'
 import { images } from '../data'
 
 export const GalleryAbout = () => {
@@ -33,8 +33,7 @@ export const GalleryAbout = () => {
                             css = {{
                                 opacity: '.3' ,
                                 transition: 'opacity 300ms ease'
-                             }}
-                            
+                             }}  
                         />
                         </Card>
                     </Grid>

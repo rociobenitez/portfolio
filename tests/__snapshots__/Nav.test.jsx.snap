@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <Nav /> match with snapshot 1`] = `
+<div>
+  <div
+    class="sc-iBYQkv grSOXA"
+  >
+    <nav>
+      <span
+        class="nextui-c-gEEnVX nextui-c-PJLV nextui-c-gEEnVX-qXFXw-color-default nextui-c-gEEnVX-duCSmO-textColor-default nextui-c-gEEnVX-lmZTtQ-size-lg nextui-c-gEEnVX-krOtXB-borderWeight-normal nextui-c-gEEnVX-bAEoQm-rounded-true nextui-c-gEEnVX-OUZAS-zoomed-true nextui-c-PJLV-gulvcB-isFocusVisible-false nextui-c-gEEnVX-ifAKUKQ-css"
+        data-state="loading"
+      >
+        <span
+          class="nextui-avatar-bg"
+        />
+        <img
+          class="nextui-avatar-img nextui-avatar--loading"
+          data-state="loading"
+          src="/assets/ilustracion-rocio.png"
+        />
+      </span>
+      <div>
+        <ul>
+          <li>
+            <a
+              href="/projects"
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="/assets/cv-RocioBenitezGarcia.pdf"
+            >
+              CV
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+`;

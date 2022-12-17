@@ -1,23 +1,5 @@
 import { Grid, Image, Spacer } from '@nextui-org/react'
-import Link from 'next/link'
-import styled from 'styled-components'
 import { projects } from '../../data'
-
-const StyledUl = styled.ul`
-    padding: 0; 
-    list-style: none;
-    li {
-        position: relative;
-        padding-left: 30px;
-        margin-bottom: 10px;
-        &:before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: var(--green);
-        }
-    }
-`
 
 export const Copoe = () => {
 
@@ -64,14 +46,14 @@ export const Copoe = () => {
             <h3>Desarrollo</h3>
             <h4>Arquitectura de la información</h4>
             <p>En la fase de desarrollo del proyecto elaboré los siguientes apartados:</p>
-            <StyledUl>
+            <ul className='list list-lg'>
                 <li><span className="enfasis">Árbol web</span>, con una estructura lo más <em>sencilla e intuitiva</em> posible, fácil para la navegación del usuario.</li>
                 <li><span className="enfasis">Diagrama de flujo (flowchart)</span>, desde que el usuario entra en la página, clica en un curso, decide asociarse, se inscribe al curso, accede al área privada y cierra sesión.</li>
                 <li><span className="enfasis">Inventario de contenido.</span> La estructura de <b>carpetas</b> del proyecto está formada por <em>&apos;admin&apos; (backend), &apos;api&apos; (datos de la BBDD), &apos;css&apos; (styles), &apos;fonts&apos;, &apos;img&apos;, &apos;js&apos; (archivos de JavaScript), &apos;views&apos; (frontend), &apos;templates&apos; y el archivo &apos;functions.php&apos;, que reúne todas las funciones php.</em></li>
                 <li><span className="enfasis">Wireframes.</span> Se diseñan los primeros bocetos de la web pensando en el diseño <em>responsive.</em></li>
-            </StyledUl>
+            </ul>
             <Spacer y={1}/>
-            <blockquote><em>Puedes ver la estructura del proyecto en <span className="enfasis"><Link href={ project.buttons[1][1] } target="_blank">GitHub</Link></span></em></blockquote>
+            <blockquote><em>Puedes ver la estructura del proyecto en <a href={ project.buttons[1][1] } target="_blank" rel="noreferrer" className='inline-link'>GitHub</a></em></blockquote>
             <Spacer y={2}/>
 
             <h4>Base de datos</h4>
@@ -88,22 +70,23 @@ export const Copoe = () => {
             <Spacer y={2}/>
 
             <h4>Bootstrap</h4>
-            <p>Para facilitar un diseño y comportamiento receptivo adecuado hice uso de <span className="enfasis"><Link href="https://getbootstrap.com/" target="_blank">Bootstrap</Link></span>, al ser un framework que ofrece un amplio abanico de herramientas y funciones para el frontend.</p>
+            <p>Para facilitar un diseño y comportamiento receptivo adecuado hice uso de <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer" className='inline-link'>Bootstrap</a>, al ser un framework que ofrece un amplio abanico de herramientas y funciones para el frontend.</p>
 
             <h3>¿Qué se ha trabajado?</h3>
             <h4>Backend</h4>
-                <StyledUl>
-                    <li>Inicio y cierre de sesión.</li>
-                    <li>Conexión con la Base de Datos.</li>
-                    <li>Posibilidad de <em>crear, ver, editar y eliminar</em> registros.</li>
-                    <li>Relacionar tablar en <em>phpMyAdmin</em></li>
-                    <li>Relacionar la parte del Admin con la del Frontend.</li>
-                    <li>Buscador de contenido.</li>
-                    <li>Capturar elementos del DOM (JavaScript)</li>
-                    <li>Subida de ficheros (imágenes).</li>
-                </StyledUl>
+            <ul className='list list-lg'>
+                <li>Inicio y cierre de sesión.</li>
+                <li>Conexión con la Base de Datos.</li>
+                <li>Posibilidad de <em>crear, ver, editar y eliminar</em> registros.</li>
+                <li>Relacionar tablar en <em>phpMyAdmin</em></li>
+                <li>Relacionar la parte del Admin con la del Frontend.</li>
+                <li>Buscador de contenido.</li>
+                <li>Capturar elementos del DOM (JavaScript)</li>
+                <li>Subida de ficheros (imágenes).</li>
+            </ul>
+            
             <h4>Frontend</h4>
-            <StyledUl>
+            <ul className='list list-lg'>
                 <li>Inicio (login) y cierre de sesión.</li>
                 <li>Registro de usuarios, para acceder al área privada, con la posibilidad de seleccionar el tipo de cuenta.</li>
                 <li>Obtener los datos del usuario que inicia sesión.</li>
@@ -116,9 +99,9 @@ export const Copoe = () => {
                 <li>Enlaces de contacto.</li>
                 <li>Posibilidad de inscripbirse a un curso.</li>
                 <li>Utilización de <b>Bootstrap</b>.</li>
-            </StyledUl>
+            </ul>
             <Spacer y={2}/>
-            <blockquote><em>Puedes ver más detalles del proyecto en mi archivo de <span className="enfasis"><Link href={ project.buttons[0][1] } target="_blank">Figma</Link></span></em></blockquote>
+            <blockquote><em>Puedes ver más detalles del proyecto en mi archivo de <a href={ project.buttons[0][1] } target="_blank" rel="noreferrer" className='inline-link'>Figma</a></em></blockquote>
         </>   
     )
 }

@@ -1,17 +1,17 @@
 import Link from 'next/link'
 import PropTypes from 'prop-types';
 
-export const Button = ({ href, texto, target }) => {
+export const Button = ({ href, text, target }) => {
   return (
     <>
-      <Link href={ href } target= { target } className="bigButton"> { texto }</Link>
+      <Link href={ href } target= { target } className="bigButton">{ text }</Link>
     </>  
   )
 }
 
 Button.propTypes = {
   href:   PropTypes.string.isRequired,
-  texto:  PropTypes.string.isRequired,
+  text:  PropTypes.string.isRequired,
   target: PropTypes.string,
 }
 

@@ -1,0 +1,96 @@
+.sectionAbout {
+    max-width: 1000px;
+    width: 100%;
+    margin: 8em auto;
+}
+
+.aboutMe div {
+    margin: 0 auto 2em;
+    @media(max-width: 768px) {
+        margin: 0 1em 2em;
+    }
+}
+
+p.list {
+    padding-top: 1em;
+}
+
+ul.skillsList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 20px;
+    margin: 20px 0 0 0;
+    overflow: hidden;  
+}
+
+.aboutMe li {
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    color: var(--white);
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.aboutMe li:before{
+    content: '▹';
+    position: absolute;
+    left: -30px;
+    color: var(--green);
+}
+
+.aboutMeImage {
+    max-width: 300px;
+    margin: auto;
+}
+
+.aboutMeImage .wrapper {
+    transition: var(--transition);
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.aboutMeImage .img {
+    position: relative;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.aboutMeImage .wrapper:after  {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 400px;
+    transition: var(--transition);
+    border: 2px solid var(--primary-color);
+    top: 32px;
+    left: 17px;
+}
+.aboutMeImage .wrapper:hover:after  {
+    width: 270px;
+    height: 270px;
+    top: 26px;
+    left: 12px;
+}
+
+.me {
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactText {
+    padding: 0 1em;
+}

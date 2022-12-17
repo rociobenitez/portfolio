@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { projects } from '../../data'
-import { Grid, Image, Spacer } from "@nextui-org/react";
+import { Spacer } from "@nextui-org/react";
 
 export const Sitiapp = () => {
 
@@ -21,8 +20,14 @@ export const Sitiapp = () => {
             <p><em>&apos;Sitiapp&apos;</em> fue un proyecto de diseño de UX en equipo (formado por 6 personas) donde se empleó la metodología de <em className="white">Design Thinking</em>. Este tipo de trabajo fue un reto y un aprendizaje para mi, ya que no había estado anteriormente como diseñadora UXUI en grupos con este número de personas.</p>
             <p>Trabajar con más compañeros me ayudó a poder plantear ideas o funcionalidades interesantes para la app que seguramente sola no las hubiera tenido en cuenta.</p>
             <Spacer y={1} />
-            <blockquote>Mejoras la comunicación con los compañeros y te obliga a argumentar y expresar mejor tus ideas.</blockquote>
-            
+            <blockquote><em>&apos;Mejoras la comunicación con los compañeros y te obliga a argumentar y expresar mejor tus ideas.&apos;</em></blockquote>
+
+            <h3>Desarrollo</h3>
+            <p>Hicimos uso de <a href='https://miro.com/es/' target='_blank' rel='noreferrer'>Miro</a> <em>(pizarra online)</em>, esta herramienta nos permitió al equipo poder trabajar en remoto y estar conectados.</p>
+            <p><em className="enfasis">Brainstorming.</em> La primera fase del proyecto fue una lluvia de ideas que continuó con una búsqueda en medios <span>(Desk Research y Netnografía)</span>. Con la ayuda de notas adhesivas fuimos construyendo un modelo o idea inicial de nuestra app.</p>
+            <p><em className="enfasis">Encuestas</em>. Utilizamos <a href='https://infogram.com/untitled-chart-1hd12yxe1r3qw6k' target='_blank' rel='noreferrer'>Infogram</a> para representar los resultados. <em>¿Quieres verlos? clica en el anterior enlace.</em></p>
+            <p><em className="enfasis">Idear y diseñar.</em> Puedes ver al detalle estas dos fases en mi archivo de <a href={project.buttons[0][1]} target='_blank' rel='noreferrer'>Figma</a> o en este <a href='https://rociobenitez.gitbook.io/design-thinking-rocio/observar/preguntas' target='_blank' rel='noreferrer'>Gitbook</a>.</p>
+            <Spacer y={3} />  
         </>
   )
 }

@@ -1,0 +1,25 @@
+.containerProject{
+    margin-top: 1em;
+}
+
+.containerProject h3 {
+    font-family: var(--font-mono);
+    font-size: 1.4em;
+    color: var(--primary-color);
+    padding: 2em 0 .5em;
+}
+
+.containerProject h4 {
+    padding: 1em 0 .3em;
+    font-size: 1.2em;
+}
+
+.containerProject h5 {
+    padding: 1em 0 .3em;
+    font-size: 1.1em;
+    font-family: var(--font-mono);
+}
+
+.containerProject p {
+    color: var(--light-slate);
+}

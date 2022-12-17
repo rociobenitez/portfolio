@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  margin: auto;
+  @media (max-width: 768px) {
+    padding: 0 50px;
+  }
+}
+.divHome {
+    margin: auto;
+    padding-top: 10vh;
+}
+
+.divHome h6 {
+    font-family: var(--font-mono);
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--primary-color);
+  }
+
+.divHome h1 {
+    font-family: var(--font-sans);
+    font-size: clamp(2.5em, 12vw, 4em);
+    font-weight: 800;
+  }
+
+.divHome h2 {
+    font-family: var(--font-sans);
+    font-size: clamp(1.2em, 5vw, 2em);
+    font-weight: 800;
+    color: var(--slate);
+    margin-bottom: 1em;
+  }

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <SmallButton /> math in snapshot 1`] = `
+<div>
+  <a
+    href="/"
+  >
+    text small button
+  </a>
+</div>
+`;

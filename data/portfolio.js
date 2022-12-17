@@ -4,7 +4,6 @@ export const projects = [
     title: "CRM Medical",
     subtitle: "UX/UI",
     nameComponent: "CrmMedical",
-    tags: ["Figma"],
     src: "/assets/crmmedical/portada-crmmedical.png",
     alt: "Mockup MacBook de la interfaz de CRM Medical",
     buttons: [
@@ -20,7 +19,6 @@ export const projects = [
       ["crmmedical/crmmedical-5.png", "Pantalla Desktop mostrando la ventana de historia médica del paciente de crm medical con imágenes adjuntas"],
       ["crmmedical/crmmedical-6.png", "Mockup de MacbookAir visualizando la ventana de login o inicio de sesión de crm medical"],
       ["crmmedical/portada-crmmedical.png", "Mockup de MacbookAir visualizando la ventana de historia médica del paciente de crm medical con imágenes adjuntas"]
-
     ],
     intro:"La idea de este proyecto nace de una necesidad percibida en el entorno laboral sanitario. 'CRM medical' es un sofware de gestión médica que pretende facilitar la práctica clínica diaria. ¿Qué lo diferencia del resto de CRMs? Está diseñado por profesionales sanitarios que entienden las necesidades laborales."
   },
@@ -29,7 +27,6 @@ export const projects = [
     title: "COPOE",
     subtitle: "FullStack Development",
     nameComponent: "Copoe",
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap"],
     src: "/assets/copoe/portada-copoe.png",
     alt: "Mockup MacBook de la web de COPOE",
     buttons: [
@@ -58,7 +55,6 @@ export const projects = [
     title: "Clínica Benítez",
     subtitle: "WordPress",
     nameComponent: 'ClinicaBenitez',
-    tags: ["WordPress", "Figma"],
     src: "/assets/clinica-benitez/portada-clinica-benitez.png",
     alt: "Mockup MacBook de la web de Clínica Benítez",
     buttons: [
@@ -78,7 +74,6 @@ export const projects = [
     title: "Runapp",
     subtitle: "UX/UI",
     nameComponent: 'Runapp',
-    tags: ["Figma"],
     src: "/assets/runapp/portada-runapp.png",
     alt: "Mockup de varios iphone donde se visualizan diferentes pantallas de la app 'Runapp'",
     buttons: [
@@ -105,12 +100,12 @@ export const projects = [
     title: "Viaje aMarte",
     subtitle: "Frontend - HTML y CSS",
     nameComponent: 'ViajeAmarte',
-    tags: ["html", "css"],
     src: "/assets/viaje-amarte/portada-viaje-amarte.png",
     alt: "Descripción de la imagen",
     buttons: [
       ['Ver demo', 'https://rociobenitez.github.io/viaje-amarte/index.html'],
-      ['Figma', 'https://www.figma.com/file/g9V0C7gVwpxSFvHEUYfk1A/crm-medical-Design-System-(Copy)?node-id=708%3A2487&t=yN41wMiW3KpcHH37-1']
+      ['Figma', 'https://www.figma.com/file/g9V0C7gVwpxSFvHEUYfk1A/crm-medical-Design-System-(Copy)?node-id=708%3A2487&t=yN41wMiW3KpcHH37-1'],
+      ['GitHub','https://github.com/rociobenitez/viaje-amarte']
     ],
     skills: ["HTML", "CSS"],
     rol: "Frontend Designer",
@@ -118,14 +113,13 @@ export const projects = [
       ['viaje-amarte/viajeamarte-1.png', 'múltiples diseños de la web de viaje amarte'],
       
     ],
-    intro: ""
+    intro: "'Viaje aMarte' es una web que muestra el trabajo de Cristina y Ainhoa, dos fotógrafas de Murcia a las que le encanta inmortalizar la esencia de cada pareja. Su especialidad es la fotografía de bodas. Aquí muestro cómo se diseñó su nueva página web."
   },
   {
     id: 6,
     title: "Siti app",
     subtitle: "UX/UI",
     nameComponent: 'Sitiapp',
-    tags: ["Figma", "Design Thinking"],
     src: "/assets/sitiapp/portada-sitiapp.png",
     alt: "Pantallas de la app",
     buttons: [
@@ -150,7 +144,6 @@ export const projects = [
   //   title: "GoTravel",
   //   subtitle: "UX/UI",
   //   nameComponent: 'Gotravel',
-  //   tags: ["Figma","Pasteapp","Maze.design","Design sprint"],
   //   src: "/assets/gotravel/portada-gotravel.png",
   //   alt: "Pantallas de la app",
   //   buttons: [

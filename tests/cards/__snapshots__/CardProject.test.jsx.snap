@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <CardProject /> match with snapshot 1`] = `
+<div>
+  <div
+    class="nextui-c-BDLTQ nextui-c-jMTBsW nextui-c-PJLV nextui-c-BDLTQ-jzLLYn-variant-flat nextui-c-BDLTQ-fmlsco-borderWeight-light nextui-c-BDLTQ-cuwTXc-disableAnimation-false nextui-c-BDLTQ-iZxJaC-isPressable-true nextui-c-PJLV-gulvcB-isFocusVisible-false nextui-c-BDLTQ-icQahLS-css"
+    role="button"
+    tabindex="0"
+  >
+    <div
+      class="nextui-c-jxECYO nextui-c-jxECYO-ijOFeae-css"
+    >
+      <div
+        class="nextui-c-cMTZRp nextui-c-cMTZRp-ijmTDtb-css"
+      >
+        <p
+          class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-idZSeUZ-css"
+        >
+          UX/UI
+        </p>
+        <h4
+          class="nextui-c-PJLV nextui-c-PJLV-idvQfOn-css"
+        >
+          CRM Medical
+        </h4>
+      </div>
+    </div>
+    <div
+      class="nextui-c-iVzbCs nextui-c-iVzbCs-bDGmTT-ready-true nextui-c-iVzbCs-icDvGzP-css nextui-image-container nextui-image--loading"
+      data-state="loading"
+    >
+      <div
+        class="nextui-c-FIiRH nextui-c-FIiRH-ibDGmTT-css nextui-image-skeleton"
+      />
+      <img
+        alt="Mockup MacBook de la interfaz de CRM Medical"
+        class="nextui-c-kbhVdb nextui-c-kbhVdb-illeQVl-css nextui-image"
+        data-state="loading"
+        height="340"
+        src="/assets/crmmedical/portada-crmmedical.png"
+        width="100%"
+      />
+    </div>
+  </div>
+</div>
+`;
